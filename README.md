@@ -5,8 +5,6 @@ Fretou é um projeto desenvolvido para fins escolares, voltado para gerenciament
 
 Funcionalidades principais:
 
-Cadastro de cargas e veículos
-
 Acompanhamento de rotas e entregas
 
 Interface responsiva para diferentes dispositivos
