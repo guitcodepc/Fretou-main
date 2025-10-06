@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fretou - Transporte de Cargas</title>
+  <link rel="icon" href="img/delivery.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header" role="banner">
+    <div class="header-left">
+      <div class="logo-wrap" id="logo-wrap" aria-hidden="false">
+        <img src="img/Logo-Azul.png" alt="Logo Fretou" id="logo-img">
+      </div>
+    </div>
+
+    <div class="header-right">
+      <nav class="menu-header" id="menu-header" aria-label="Navegação principal">
+        <button id="menu-close" class="menu-close" aria-label="Fechar menu">✕</button>
+        <a href="#" id="btn-motorista" class="btn">Área do motorista</a>
+        <a href="#sobre" id="btn-sobre" class="btn">Sobre</a>
+        <a href="#contato" id="btn-contato" class="btn">Contato</a>
+        <a href="#" id="btn-acao" class="btn btn-acao">Seja cliente</a>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-header">
+        <span class="hamburger-line line1"></span>
+        <span class="hamburger-line line2"></span>
+        <span class="hamburger-line line3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN / HERO ================= -->
+  <main>
+    <section class="hero" id="hero" aria-label="Apresentação">
+      <div class="hero-content">
+        <h1 id="cliente-content">Encontre um caminhoneiro para levar sua carga</h1>
+        <p>Conectamos quem precisa transportar cargas com caminhoneiros autônomos de forma rápida, segura e transparente.</p>
+        <!-- CTA removido do centro conforme solicitado -->
+      </div>
+    </section>
+
+    <section class="vantagens" aria-label="Vantagens">
+      <div class="card">
+        <img src="img/icone1.png" alt="Ícone 1">
+        <p>Aumente sua renda conectando-se diretamente com quem precisa transportar cargas. Sem intermediários, mais lucro para você.</p>
+      </div>
+      <div class="card">
+        <img src="img/icone2.png" alt="Ícone 2">
+        <p>Compare propostas, avalie perfis e escolha o caminhoneiro ideal para sua necessidade.</p>
+      </div>
+      <div class="card destaque">
+        <img src="img/icone3.png" alt="Ícone 3">
+        <p>Monitore sua carga durante todo o trajeto com GPS em tempo real e comunicação direta.</p>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre" aria-label="Sobre a empresa">
+      <div class="convite">
+        <h2>Conheça mais sobre a empresa</h2>
+      </div>
+
+      <div class="cards-container" id="cards-container">
+        <div class="sobre-card card">
+          <img src="img/engrenagem.png" alt="Ícone" class="icon"/>
+          <h3>Negociações em tempo real</h3>
+          <ul>
+            <li>Publicação rápida de cargas</li>
+            <li>Recebimento de propostas instantâneas</li>
+            <li>Escolha do caminhoneiro ideal</li>
+            <li>Negociação direta e segura</li>
+          </ul>
+        </div>
+
+        <div class="sobre-card card">
+          <img src="img/engrenagem.png" alt="Ícone" class="icon"/>
+          <h3>Transparência e segurança</h3>
+          <ul>
+            <li>Rastreamento por GPS</li>
+            <li>Comunicação direta com motorista</li>
+            <li>Pagamentos seguros</li>
+            <li>Histórico completo de cargas</li>
+          </ul>
+        </div>
+
+        <div class="sobre-card card">
+          <img src="img/engrenagem.png" alt="Ícone" class="icon"/>
+          <h3>Suporte dedicado</h3>
+          <ul>
+            <li>Atendimento 24/7</li>
+            <li>Chat de ajuda com IA</li>
+            <li>Resolução rápida de problemas</li>
+            <li>Guia de uso passo a passo</li>
+          </ul>
+        </div>
+
+        <div class="sobre-card card">
+          <img src="img/engrenagem.png" alt="Ícone" class="icon"/>
+          <h3>Flexibilidade e controle</h3>
+          <ul>
+            <li>Escolha de rotas e horários</li>
+            <li>Acompanhamento detalhado</li>
+            <li>Notificações em tempo real</li>
+            <li>Controle total da logística</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contato" class="contato" aria-label="Formulário de contato">
+    <div class="contato-container">
+      <h2>Fale conosco:</h2>
+      <form id="contact-form" class="contact-form" action="send_email.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button id="enviar-contato" class="btn btn-contato-enviar" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© Copyright 2025 - Fretou. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ================= CHAT IA SIMULADO ================= -->
+  <div id="chat-bubble" class="chat-bubble" title="Abrir chat de ajuda" aria-label="Abrir chat">
+    <img src="img/chat.png" alt="Chat">
+  </div>
+
+  <div id="chat-panel" class="chat-panel" aria-hidden="true" role="dialog" aria-label="Assistente Fretou">
+    <div class="chat-header">
+      <strong>Fretou AI - Ajuda</strong>
+      <button id="chat-close" class="chat-close" aria-label="Fechar chat">✕</button>
+    </div>
+
+    <!-- SUGESTÕES RÁPIDAS (novo) -->
+    <div class="chat-suggestions" aria-hidden="false">
+      <div class="suggestion" data-suggest="sobre">Sobre a empresa</div>
+      <div class="suggestion" data-suggest="precos">Preços fictícios</div>
+      <div class="suggestion" data-suggest="o-que-fazemos">O que fazemos</div>
+    </div>
+
+    <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+      <div class="message system">Olá! Eu sou o assistente do Fretou. Escolha uma sugestão ou pergunte algo.</div>
+    </div>
+
+    <form id="chat-form" class="chat-form" onsubmit="return false;">
+      <input id="chat-input" type="text" placeholder="Pergunte sobre cadastro, preços, como funciona..." autocomplete="off" required>
+      <button id="chat-send" class="btn" aria-label="Enviar mensagem">Enviar</button>
+    </form>
+  </div>
+
+  <script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>
